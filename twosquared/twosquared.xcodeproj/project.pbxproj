@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		DA0888E81A420E0A008615BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0888E71A420E0A008615BF /* AppDelegate.swift */; };
 		DA0888EA1A420E0A008615BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0888E91A420E0A008615BF /* ViewController.swift */; };
-		DA0888ED1A420E0A008615BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0888EB1A420E0A008615BF /* Main.storyboard */; };
 		DA0888EF1A420E0A008615BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0888EE1A420E0A008615BF /* Images.xcassets */; };
 		DA0888F21A420E0A008615BF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA0888F01A420E0A008615BF /* LaunchScreen.xib */; };
 		DA0888FE1A420E0A008615BF /* twosquaredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0888FD1A420E0A008615BF /* twosquaredTests.swift */; };
+		DA08890A1A420FA9008615BF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0889091A420FA9008615BF /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +30,12 @@
 		DA0888E61A420E0A008615BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA0888E71A420E0A008615BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA0888E91A420E0A008615BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DA0888EC1A420E0A008615BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA0888EE1A420E0A008615BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DA0888F11A420E0A008615BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DA0888F71A420E0A008615BF /* twosquaredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twosquaredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0888FC1A420E0A008615BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA0888FD1A420E0A008615BF /* twosquaredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twosquaredTests.swift; sourceTree = "<group>"; };
+		DA0889091A420FA9008615BF /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 			children = (
 				DA0888E71A420E0A008615BF /* AppDelegate.swift */,
 				DA0888E91A420E0A008615BF /* ViewController.swift */,
-				DA0888EB1A420E0A008615BF /* Main.storyboard */,
+				DA0889091A420FA9008615BF /* View.swift */,
 				DA0888EE1A420E0A008615BF /* Images.xcassets */,
 				DA0888F01A420E0A008615BF /* LaunchScreen.xib */,
 				DA0888E51A420E0A008615BF /* Supporting Files */,
@@ -192,7 +192,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA0888ED1A420E0A008615BF /* Main.storyboard in Resources */,
 				DA0888F21A420E0A008615BF /* LaunchScreen.xib in Resources */,
 				DA0888EF1A420E0A008615BF /* Images.xcassets in Resources */,
 			);
@@ -214,6 +213,7 @@
 			files = (
 				DA0888EA1A420E0A008615BF /* ViewController.swift in Sources */,
 				DA0888E81A420E0A008615BF /* AppDelegate.swift in Sources */,
+				DA08890A1A420FA9008615BF /* View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +236,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DA0888EB1A420E0A008615BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA0888EC1A420E0A008615BF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DA0888F01A420E0A008615BF /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -407,6 +399,7 @@
 				DA0889031A420E0A008615BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA0889041A420E0A008615BF /* Build configuration list for PBXNativeTarget "twosquaredTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +408,7 @@
 				DA0889061A420E0A008615BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
