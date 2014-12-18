@@ -13,6 +13,12 @@
 		DA0888F21A420E0A008615BF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA0888F01A420E0A008615BF /* LaunchScreen.xib */; };
 		DA0888FE1A420E0A008615BF /* twosquaredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0888FD1A420E0A008615BF /* twosquaredTests.swift */; };
 		DA08890A1A420FA9008615BF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0889091A420FA9008615BF /* View.swift */; };
+		DA08890C1A437AEF008615BF /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA08890B1A437AEF008615BF /* Filter.swift */; };
+		DA0889141A438D98008615BF /* Kitten1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA08890F1A438D98008615BF /* Kitten1.jpg */; };
+		DA0889151A438D98008615BF /* Kitten2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA0889101A438D98008615BF /* Kitten2.jpg */; };
+		DA0889161A438D98008615BF /* Kitten4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA0889111A438D98008615BF /* Kitten4.jpg */; };
+		DA0889171A438D98008615BF /* Kitten3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA0889121A438D98008615BF /* Kitten3.jpg */; };
+		DA0889181A438D98008615BF /* Shit1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA0889131A438D98008615BF /* Shit1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		DA0888FC1A420E0A008615BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA0888FD1A420E0A008615BF /* twosquaredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twosquaredTests.swift; sourceTree = "<group>"; };
 		DA0889091A420FA9008615BF /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		DA08890B1A437AEF008615BF /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		DA08890F1A438D98008615BF /* Kitten1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kitten1.jpg; sourceTree = "<group>"; };
+		DA0889101A438D98008615BF /* Kitten2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kitten2.jpg; sourceTree = "<group>"; };
+		DA0889111A438D98008615BF /* Kitten4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kitten4.jpg; sourceTree = "<group>"; };
+		DA0889121A438D98008615BF /* Kitten3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kitten3.jpg; sourceTree = "<group>"; };
+		DA0889131A438D98008615BF /* Shit1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Shit1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +92,7 @@
 				DA0888E71A420E0A008615BF /* AppDelegate.swift */,
 				DA0888E91A420E0A008615BF /* ViewController.swift */,
 				DA0889091A420FA9008615BF /* View.swift */,
+				DA08890B1A437AEF008615BF /* Filter.swift */,
 				DA0888EE1A420E0A008615BF /* Images.xcassets */,
 				DA0888F01A420E0A008615BF /* LaunchScreen.xib */,
 				DA0888E51A420E0A008615BF /* Supporting Files */,
@@ -90,6 +103,11 @@
 		DA0888E51A420E0A008615BF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA08890F1A438D98008615BF /* Kitten1.jpg */,
+				DA0889101A438D98008615BF /* Kitten2.jpg */,
+				DA0889111A438D98008615BF /* Kitten4.jpg */,
+				DA0889121A438D98008615BF /* Kitten3.jpg */,
+				DA0889131A438D98008615BF /* Shit1.jpg */,
 				DA0888E61A420E0A008615BF /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +179,7 @@
 				TargetAttributes = {
 					DA0888E11A420E0A008615BF = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 8RRU6HE36Q;
 					};
 					DA0888F61A420E0A008615BF = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -192,8 +211,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0889161A438D98008615BF /* Kitten4.jpg in Resources */,
+				DA0889181A438D98008615BF /* Shit1.jpg in Resources */,
 				DA0888F21A420E0A008615BF /* LaunchScreen.xib in Resources */,
+				DA0889171A438D98008615BF /* Kitten3.jpg in Resources */,
 				DA0888EF1A420E0A008615BF /* Images.xcassets in Resources */,
+				DA0889141A438D98008615BF /* Kitten1.jpg in Resources */,
+				DA0889151A438D98008615BF /* Kitten2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA0888EA1A420E0A008615BF /* ViewController.swift in Sources */,
+				DA08890C1A437AEF008615BF /* Filter.swift in Sources */,
 				DA0888E81A420E0A008615BF /* AppDelegate.swift in Sources */,
 				DA08890A1A420FA9008615BF /* View.swift in Sources */,
 			);
@@ -330,9 +355,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: JAMES  HARTT (V7H34LBS4W)";
 				INFOPLIST_FILE = twosquared/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "707996D1-DBE9-4953-9498-129DF11895DC";
 			};
 			name = Debug;
 		};
@@ -343,6 +370,7 @@
 				INFOPLIST_FILE = twosquared/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
