@@ -11,10 +11,10 @@ import UIKit
 class View: UIView {
     
     let questionLabel = UILabel()
-    let imageViewTopLeft = UIImageView()
-    let imageViewTopRight = UIImageView()
-    let imageViewBottomRight = UIImageView()
-    let imageViewBottomLeft = UIImageView()
+    let imageViewTopLeft = CoreImageView(frame: CGRectMake(0, 0, 100, 100), context: nil)
+    let imageViewTopRight = CoreImageView(frame: CGRectMake(0, 0, 100, 100), context: nil)
+    let imageViewBottomRight = CoreImageView(frame: CGRectMake(0, 0, 100, 100), context: nil)
+    let imageViewBottomLeft = CoreImageView(frame: CGRectMake(0, 0, 100, 100), context: nil)
     
     required init(coder aDecoder: NSCoder) {
         
@@ -46,18 +46,22 @@ class View: UIView {
         
         imageViewTopLeft.backgroundColor = UIColor.brownColor()
         imageViewTopLeft.setTranslatesAutoresizingMaskIntoConstraints(false)
+        imageViewTopLeft.contentMode = UIViewContentMode.ScaleAspectFill
         self.addSubview(imageViewTopLeft)
         
         imageViewTopRight.backgroundColor = UIColor.greenColor()
         imageViewTopRight.setTranslatesAutoresizingMaskIntoConstraints(false)
-        self.addSubview(imageViewTopRight)
+        imageViewTopRight.contentMode = UIViewContentMode.ScaleAspectFill
+       self.addSubview(imageViewTopRight)
 
         imageViewBottomRight.backgroundColor = UIColor.blueColor()
         imageViewBottomRight.setTranslatesAutoresizingMaskIntoConstraints(false)
+        imageViewBottomRight.contentMode = UIViewContentMode.ScaleAspectFill
         self.addSubview(imageViewBottomRight)
 
         imageViewBottomLeft.backgroundColor = UIColor.yellowColor()
         imageViewBottomLeft.setTranslatesAutoresizingMaskIntoConstraints(false)
+        imageViewBottomLeft.contentMode = UIViewContentMode.ScaleAspectFill
         self.addSubview(imageViewBottomLeft)
 
         self.setNeedsUpdateConstraints()

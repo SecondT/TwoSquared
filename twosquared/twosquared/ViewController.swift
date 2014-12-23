@@ -21,17 +21,61 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        
         let view = self.view as View
         
+        let resizeFilter = resize(view.imageViewTopLeft.frame.size.height)
+        let pixelatedFilter = pixelate(8)
+
         let firstUIImage = UIImage(named: "Kitten1.jpg")
+        let resizedFirstUIImage = resizeFilter(firstUIImage!)
         
-        let kittenImage = CIImage(image: firstUIImage)
+        let firstCIKittenImage = CIImage(image: resizedFirstUIImage)
         
-        var pixelatedKitten = pixelate(80.0)(kittenImage)
+        let firstPixelatedCIKitten = pixelatedFilter(firstCIKittenImage)
         
-        let uiImage = UIImage(CIImage: pixelatedKitten)
+        view.imageViewTopLeft.contentMode = UIViewContentMode.ScaleToFill
+        view.imageViewTopLeft.image = firstPixelatedCIKitten
+
+        let secondUIImage = UIImage(named: "Kitten2.jpg")
+        let secondResizedUIImage = resizeFilter(secondUIImage!)
         
-        view.imageViewTopLeft.image = uiImage;
+        let secondCIKittenImage = CIImage(image: secondResizedUIImage)
+        
+        let secondPixelatedCIKitten = pixelatedFilter(secondCIKittenImage)
+        
+        view.imageViewTopRight.contentMode = UIViewContentMode.ScaleToFill
+        view.imageViewTopRight.image = secondPixelatedCIKitten
+        
+        
+        
+        let thirdUIImage = UIImage(named: "Kitten3.jpg")
+        let thirdResizedUIImage = resizeFilter(thirdUIImage!)
+        
+        let thirdCIKittenImage = CIImage(image: thirdResizedUIImage)
+        
+        let thirdPixelatedCIKitten = pixelatedFilter(thirdCIKittenImage)
+        
+        view.imageViewBottomLeft.contentMode = UIViewContentMode.ScaleToFill
+        view.imageViewBottomLeft.image = thirdPixelatedCIKitten
+
+        
+        let fourthUIImage = UIImage(named: "Kitten4.jpg")
+        let fourthResizedUIImage = resizeFilter(fourthUIImage!)
+        
+        let fourthCIKittenImage = CIImage(image: fourthResizedUIImage)
+        
+        let fourthPixelatedCIKitten = pixelatedFilter(fourthCIKittenImage)
+        
+        view.imageViewBottomRight.contentMode = UIViewContentMode.ScaleToFill
+        view.imageViewBottomRight.image = fourthPixelatedCIKitten
+        
+
     }
 
     override func didReceiveMemoryWarning() {

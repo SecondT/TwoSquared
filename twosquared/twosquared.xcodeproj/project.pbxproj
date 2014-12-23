@@ -19,6 +19,9 @@
 		DA0889161A438D98008615BF /* Kitten4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA0889111A438D98008615BF /* Kitten4.jpg */; };
 		DA0889171A438D98008615BF /* Kitten3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA0889121A438D98008615BF /* Kitten3.jpg */; };
 		DA0889181A438D98008615BF /* Shit1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA0889131A438D98008615BF /* Shit1.jpg */; };
+		DAFFA65F1A4A129300AA8713 /* CoreImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFA65E1A4A129300AA8713 /* CoreImageView.swift */; };
+		DAFFA6611A4A1B2A00AA8713 /* ContentMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFA6601A4A1B2A00AA8713 /* ContentMode.swift */; };
+		DAFFA6631A4A278700AA8713 /* UIImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFA6621A4A278700AA8713 /* UIImageFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		DA0889111A438D98008615BF /* Kitten4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kitten4.jpg; sourceTree = "<group>"; };
 		DA0889121A438D98008615BF /* Kitten3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kitten3.jpg; sourceTree = "<group>"; };
 		DA0889131A438D98008615BF /* Shit1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Shit1.jpg; sourceTree = "<group>"; };
+		DAFFA65E1A4A129300AA8713 /* CoreImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreImageView.swift; sourceTree = "<group>"; };
+		DAFFA6601A4A1B2A00AA8713 /* ContentMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentMode.swift; sourceTree = "<group>"; };
+		DAFFA6621A4A278700AA8713 /* UIImageFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,9 @@
 				DA0888E91A420E0A008615BF /* ViewController.swift */,
 				DA0889091A420FA9008615BF /* View.swift */,
 				DA08890B1A437AEF008615BF /* Filter.swift */,
+				DAFFA6621A4A278700AA8713 /* UIImageFilter.swift */,
+				DAFFA65E1A4A129300AA8713 /* CoreImageView.swift */,
+				DAFFA6601A4A1B2A00AA8713 /* ContentMode.swift */,
 				DA0888EE1A420E0A008615BF /* Images.xcassets */,
 				DA0888F01A420E0A008615BF /* LaunchScreen.xib */,
 				DA0888E51A420E0A008615BF /* Supporting Files */,
@@ -235,10 +244,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFFA65F1A4A129300AA8713 /* CoreImageView.swift in Sources */,
 				DA0888EA1A420E0A008615BF /* ViewController.swift in Sources */,
 				DA08890C1A437AEF008615BF /* Filter.swift in Sources */,
 				DA0888E81A420E0A008615BF /* AppDelegate.swift in Sources */,
+				DAFFA6611A4A1B2A00AA8713 /* ContentMode.swift in Sources */,
 				DA08890A1A420FA9008615BF /* View.swift in Sources */,
+				DAFFA6631A4A278700AA8713 /* UIImageFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
